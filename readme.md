@@ -36,4 +36,5 @@ But what does each function do?
 | Command     | Description | Use     |
 | :---        |    :----:   |          ---: |
 | createCollisionBox(gameObject, width, height)      | Creates a bounding box (or bbox for short) and appends it to the provided game object.       | createCollisionBox(player, 64, 64)   |
-| Paragraph   | Text        | And more      |
+| checkOverlap(box1, box2)   | Checks if the provided boxes are overlapping        | checkOverlap(player, enemy)      |
+| advancedOverlap(x1,x2,y1,y2,w1,w2,h1,h2) | Checks if the provided x, y, width, and height values are overlapping | advancedOverlap(player.x + 1, wall.x, player.y + 1, wall.y, 64, 64, 64, 64) |
